@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermAndCondition">
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="#D2FFFFFF"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/_6sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="@dimen/_60sdp"
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:src="@drawable/logo" />
+            <TextView
+                android:layout_below="@+id/logo"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:id="@+id/get_start_content"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/term_and_condition_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_below="@+id/get_start_content"
+                android:id="@+id/proceed_to_loan_btn"
+                android:text="@string/proceed_to_loans"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp"
+                android:elevation="@dimen/_6sdp"
+                android:background="@drawable/buttonroundconner"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_40sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp" />
+            <LinearLayout
+                android:layout_below="@+id/proceed_to_loan_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.gms.ads.AdView
+                    android:layout_gravity="bottom"
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/app_banner_testing"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

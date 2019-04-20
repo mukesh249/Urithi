@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:fillViewport="true"
+    android:layout_gravity="center|top"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".GetStartActivity">
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="#D2FFFFFF"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/_6sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@drawable/logo" />
+            <EditText
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_below="@+id/logo"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:id="@+id/forgot_email"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:background="@drawable/roundconner_border"
+                android:padding="@dimen/_10sdp"
+                android:hint="@string/email_addresss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:id="@+id/send_btn"
+                android:layout_below="@+id/forgot_email"
+                android:text="@string/send"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_15sdp"
+                android:elevation="@dimen/_6sdp"
+                android:background="@drawable/buttonroundconner"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_40sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp" />
+
+
+            <RelativeLayout
+                android:layout_below="@+id/send_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/app_banner_testing">
+                </com.google.android.gms.ads.AdView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</ScrollView>

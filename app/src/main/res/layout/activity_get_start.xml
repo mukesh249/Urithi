@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:fillViewport="true"
+    android:layout_gravity="center|top"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".GetStartActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:transitionName="btn_from_trn"
+        app:cardElevation="@dimen/_6sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:transitionName="Logo"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_125sdp"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:src="@drawable/logo"
+                />
+            <TextView
+                android:layout_below="@id/logo"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:id="@+id/get_start_content"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/get_start_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_below="@+id/get_start_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/checkbox_lin"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/get_start_checkbox"
+                    android:buttonTint="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/accept_condition_tv"
+                    android:textColor="@color/black"
+                    android:text="@string/accept_terms_and_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:transitionName="get_btn_tr"
+                android:id="@+id/get_start_btn"
+                android:layout_below="@+id/checkbox_lin"
+                android:text="@string/get_start"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_15sdp"
+                android:elevation="@dimen/_6sdp"
+                android:background="@drawable/buttonroundconner"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_40sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp" />
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/app_banner_testing">
+            </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</ScrollView>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@drawable/bg"
+    tools:context=".Faq">
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="#D2FFFFFF"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/_6sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@drawable/logo" />
+
+
+            <RelativeLayout
+                android:id="@+id/invite_layout"
+                android:layout_below="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textAllCaps="true"
+                    android:id="@+id/pro_of"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:text="@string/invite_frineds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/refer_tv"
+                    android:layout_below="@+id/pro_of"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/refer_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/bouns_tv"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/refer_tv"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:text="@string/bouns_win_500_kes_reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/invite_btn"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/bouns_tv"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:text="@string/invite_friends"
+                    android:background="@drawable/buttonroundconner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_33sdp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/invite_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textAllCaps="true"
+                    android:id="@+id/rate_us_tv"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="@string/rate_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/rate_us_content"
+                    android:layout_below="@+id/rate_us_tv"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/rate_us_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/bouns_rate_tv"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/rate_us_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="@string/bouns_win_100_kes_reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/rate_us_btn"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/bouns_rate_tv"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:text="@string/rate_us"
+                    android:background="@drawable/buttonroundconner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_33sdp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/fag_btn"
+                    android:text="@string/faq"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_13sdp"
+                    android:elevation="@dimen/_6sdp"
+                    android:background="@drawable/buttonroundconner"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_33sdp" />
+                <ImageButton
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/home_btn"
+                    android:src="@drawable/ic_home"
+                    android:elevation="@dimen/_6sdp"
+                    android:background="@drawable/buttonroundconner"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_width="@dimen/_33sdp"
+                    android:layout_height="@dimen/_33sdp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</ScrollView>

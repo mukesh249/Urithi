@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Urithi</string>
+
+    <string name="start">Start</string>
+    <string name="get_start">Get Started</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email_addresss">Email address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="accept_terms_and_conditions">Accept Terms and Conditions</string>
+    <string name="get_loan_in_3_easy_steps">GET LOAN IN 3 EASY STEPS</string>
+    <string name="_1_create_your_account">1. Create your account.</string>
+    <string name="_2_enter_identification_details">2. Enter identification details.</string>
+    <string name="_3_enter_your_loan_amount">3. Enter your loan amount.</string>
+    <string name="registration">Registration</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="id_number_passport_no">ID Number/ Passport No.</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="create_account">Create Account</string>
+    <string name="purposer_of_the_loan">Purpose of the Loan</string>
+    <string name="all_the_information_you_provide_is_encrypted_and_secured">All the information you provide \n is encrypted and secured</string>
+    <string name="i_e_emergencies_business_etc">i.e. Emergencies, Business, etc.</string>
+    <string name="business_loan_10_000_kes_max"> Business Loan: 10,000 KES(Max)</string>
+    <string name="personal_loan_1_500_kes_max"> Personal Loan: 1,500 KES(Max)</string>
+
+    <string name="already_applied_check_loan_status"><u>Already Applied?Check Loan Status</u></string>
+    <string name="loan_details">Loan Details</string>
+    <string name="repayment_1_6_months">Repayment(1 - 6 Months)</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="proceed">Proceed</string>
+    <string name="go_back_to_home">Go back to home</string>
+    <string name="loan_request_received">Loan Request Received</string>
+    <string name="received_content">You will get a confirmation message via SMS, upon approval. Sometimes we may experience long queue time but we are actively working to shorten the queue time and serve you as soon as possible.</string>
+    <string name="already_content">Your loan Request has been submitted successfully. we are experiencing long queue times but we are actively working to shorten the queue time. you will get a confirmation message via SMS, upon approval.</string>
+    <string name="got_it">Got it!</string>
+    <string name="get_start_content">Enjoy low interest Rate of 4% . Feedback in 24-48 hours. Repayment period 1-6 months. Receive your loan via mpesa, airtel money or Tkash.</string>
+    <string name="re_enter_password">Re-enter Password</string>
+    <string name="faq">FAQ</string>
+    <string name="refer_earn"><![CDATA[Refer & Earn]]></string>
+    <string name="request_for_loan">Request for Loan</string>
+    <string name="ksh">KSH</string>
+    <string name="for_first_time_user">FOR FIRST TIME USER</string>
+    <string name="invite_frineds">Invite friends</string>
+    <string name="refer_content">Refer our App to 10 friends and earn 500 KES.</string>
+    <string name="bouns_win_500_kes_reward">Bonus! win 500 kes reward</string>
+    <string name="rate_us_content">Rate us with five star ***** and your stand a chance to get extra 100 KES.</string>
+    <string name="bouns_win_100_kes_reward">Bonus! win 100 kes reward</string>
+    <string name="rate_us">Rate us</string>
+    <string name="frequently_asked_questions">Frequently Asked Questions</string>
+    <string name="go_back">Go Back</string>
+    <string name="ans">Ans.</string>
+    <string name="network_error_msg">Check your internet connection and restart the application</string>
+    <string name="api_hiting">please wait...</string>
+    <string name="send">Send</string>
+    <string name="enter_your_security_code">Enter Your Security Code</string>
+    <string name="verify">Verify</string>
+    <string name="enter_your_new_password">Enter Your New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="submit">Submit</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_the_6_digit_code">Enter the 4-digit code</string>
+    <string name="invite_friends">Invite Friends</string>
+
+    <string name="app_id">ca-app-pub-4772141897105023~5357609986</string>
+    <!--<string name="app_interstitial">ca-app-pub-4772141897105023/8147424858</string>-->
+    <!--<string name="app_banner">ca-app-pub-4772141897105023/9843649905</string>-->
+
+    <string name="app_banner_testing">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="app_interstitial_testing">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="proceed_to_loans">Proceed to Loans</string>
+    <string name="term_and_condition_content">We shall not be responsible for any loss suffered by you should the Services be interfered with or be unavailable. \n Please note that we are still improving our app and it may take 24hrs to respond to your request. We appreciate your membership as we continue to build on this app. </string>
+    <string name="email">Email</string>
+    <!--<string name="re_enter_password">Re-enter Password</string>-->
+
+    <string-array name="limits_array">
+        <item>Business Loan</item>
+        <item>Personal Loan</item>
+    </string-array>
+</resources>

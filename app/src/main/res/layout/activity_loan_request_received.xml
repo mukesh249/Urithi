@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@drawable/bg"
+    tools:context=".LoanRequestReceived">
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="#D2FFFFFF"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/_6sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@drawable/logo" />
+
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/loan_req"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/loan_request_received"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:id="@+id/content"
+                    android:layout_below="@+id/loan_req"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/received_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_below="@+id/content"
+                    android:id="@+id/go_back_btn"
+                    android:text="@string/go_back_to_home"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/_6sdp"
+                    android:background="@drawable/buttonroundconner"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/fag_btn"
+                    android:text="@string/faq"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_13sdp"
+                    android:elevation="@dimen/_6sdp"
+                    android:background="@drawable/buttonroundconner"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_33sdp" />
+                <Button
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/refer_earn_btn"
+                    android:text="@string/refer_earn"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/_6sdp"
+                    android:background="@drawable/buttonroundconner"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_33sdp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</ScrollView>
